@@ -1,0 +1,45 @@
+<%= form_for @trainmodel, :html => {:multipart => true} do |f| %>
+  <% if @trainmodel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trainmodel.errors.count, "error") %> prohibited this trainmodel from being saved:</h2>
+
+      <ul>
+      <% @trainmodel.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :modid %><br>
+    <%= f.number_field :modid %>
+  </div>
+  <div class="field">
+    <%= f.label :moddesc %><br>
+    <%= f.text_area :moddesc %>
+  </div>
+  <div class="field">
+    <%= f.label :modname %><br>
+    <%= f.text_field :modname %>
+  </div>
+  <div class="field">
+    <%= f.label :trainfile %><br>
+    <%= f.file_field :trainfile %>
+  </div>
+  <div class="field">
+    <%= f.label :testfile %><br>
+    <%= f.file_field :testfile %>
+  </div>
+  <div class="field">
+    <%= f.label :addtnl %><br>
+    <%= f.text_area :addtnl %>
+  </div>
+  <div class="field">
+    <%= f.label :modcheck %><br>
+    <%= f.check_box :modcheck %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

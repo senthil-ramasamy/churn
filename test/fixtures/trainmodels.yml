@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  modid: 1
+  moddesc: MyText
+  modname: MyString
+  trainfile: MyString
+  testfile: MyString
+  addtnl: MyText
+  modcheck: false
+
+two:
+  modid: 1
+  moddesc: MyText
+  modname: MyString
+  trainfile: MyString
+  testfile: MyString
+  addtnl: MyText
+  modcheck: false

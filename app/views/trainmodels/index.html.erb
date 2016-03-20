@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Trainmodels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modid</th>
+      <th>Moddesc</th>
+      <th>Modname</th>
+      <th>Trainfile</th>
+      <th>Testfile</th>
+      <th>Addtnl</th>
+      <th>Modcheck</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trainmodels.each do |trainmodel| %>
+      <tr>
+        <td><%= trainmodel.modid %></td>
+        <td><%= trainmodel.moddesc %></td>
+        <td><%= trainmodel.modname %></td>
+        <td><%= trainmodel.trainfile %></td>
+        <td><%= trainmodel.testfile %></td>
+        <td><%= trainmodel.addtnl %></td>
+        <td><%= trainmodel.modcheck %></td>
+        <td><%= link_to 'Show', trainmodel %></td>
+        <td><%= link_to 'Edit', edit_trainmodel_path(trainmodel) %></td>
+        <td><%= link_to 'Destroy', trainmodel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trainmodel', new_trainmodel_path %>

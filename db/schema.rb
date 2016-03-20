@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160306135221) do
+ActiveRecord::Schema.define(version: 20160320131419) do
+
+  create_table "trainmodels", force: :cascade do |t|
+    t.integer  "modid"
+    t.text     "moddesc"
+    t.string   "modname"
+    t.string   "trainfile"
+    t.string   "testfile"
+    t.text     "addtnl"
+    t.boolean  "modcheck"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
