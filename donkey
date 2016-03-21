@@ -237,7 +237,7 @@ Dep. Variable:                  Churn   No. Observations:                 3000
 Model:                          Logit   Df Residuals:                     2984
 Method:                           MLE   Df Model:                           15
 Date:                Mon, 21 Mar 2016   Pseudo R-squ.:                  0.2938
-Time:                        01:28:32   Log-Likelihood:                -1214.0
+Time:                        09:42:06   Log-Likelihood:                -1214.0
 converged:                       True   LL-Null:                       -1719.2
                                         LLR p-value:                8.381e-206
 ====================================================================================

@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
   get '/publish' => 'trainmodels#trainbutton'
+  get '/testdata' => 'trainmodels#testbutton'
 end

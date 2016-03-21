@@ -37,7 +37,14 @@ class TrainmodelsController < ApplicationController
 
 	end
   end
- 
+	
+  def testbutton
+	%x(echo 1)
+	puts "test button fucntion working"
+	respond_to do |format|
+		format.html { redirect_to trainmodels_path , notice:'the test data was uploaded and is testing' }
+	end
+  end 
  # POST /trainmodels
   # POST /trainmodels.json
   def create
